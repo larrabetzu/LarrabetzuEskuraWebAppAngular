@@ -1,0 +1,23 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand"><span><img src="images/rsslogo.svg" alt="logo" class="logo"></span>Elkarteak</a>
+    </div>
+  </div>
+</nav>
+
+
+
+    <ul class="list-group">
+      <li class="list-group-item" ng-repeat="elkartea in elkarteak | orderBy:'nor'">
+        <strong>{{ elkartea.nor }}</strong>
+        <div class="pull-right">
+          <a ng-href="{{ elkartea.webgunea }}" target="_blank" class="elkarteak-info">
+            <span class="glyphicon glyphicon-link"></span>
+          </a>
+          <a ng-href="mailto:{{ elkartea.email }}" class="elkarteak-info">
+            <span class="glyphicon glyphicon-envelope"></span>
+          </a>
+        </div>
+      </li>
+    </ul>

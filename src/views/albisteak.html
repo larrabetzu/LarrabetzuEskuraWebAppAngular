@@ -1,0 +1,21 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand"><span><img src="images/rsslogo.svg" alt="logo" class="logo"></span>Albisteak</a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container">
+   <div class="panel panel-primary"  ng-repeat="feed in feeds | orderBy:'title'">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{feed.title}}</h3>
+    </div>
+    <ul class="list-group">
+      <li class="list-group-item" ng-repeat="item in feed.entries">
+        <a class="h4" href="{{item.link}}" target="_blank">{{item.title}}</a>
+      </li>
+    </ul>
+   </div>
+</div>

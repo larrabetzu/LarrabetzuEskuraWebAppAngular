@@ -1,0 +1,28 @@
+{
+  "name": "Larrabetzu-eskura-angular",
+  "version": "0.0.0",
+  "description": "Larrabetzuko Kultur agenda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergio Peña <sergiop79@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-concat": "^2.2.0",
+    "gulp-plumber": "^0.6.3",
+    "gulp-csso": "^0.2.9",
+    "gulp-uglify": "^0.3.0",
+    "gulp": "^3.8.0",
+    "gulp-sass": "^0.7.2",
+    "gulp-htmlmin": "^0.1.2",
+    "gulp-autoprefixer": "0.0.7",
+    "tiny-lr": "0.0.7",
+    "gulp-livereload": "^2.1.0",
+    "gulp-imagemin": "^0.6.1",
+    "gulp-angular-templatecache": "^1.2.1"
+  },
+  "dependencies": {
+    "node-static": "^0.7.3"
+  }
+}

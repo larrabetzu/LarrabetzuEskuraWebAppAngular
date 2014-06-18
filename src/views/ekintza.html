@@ -1,0 +1,39 @@
+<nav class="navbar navbar-inverse navbar-fixed-top header-menu" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand"><span><img src="images/rsslogo.svg" alt="logo" class="logo"></span>Ekintza</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+          <div class="media col-xs-12">
+            <div class="media-object media-data pull-left" >
+              <h4>{{ ekintza.fields.egune |date:'MMM' }}</h4>
+              <h2>{{ ekintza.fields.egune |date:'d' }}</h2>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">{{ ekintza.fields.tituloa }}</h4>
+              <span class="glyphicon glyphicon-time"></span> <span>{{ ekintza.fields.egune |date:'HH:mm' }}</span>
+              <span class="glyphicon glyphicon-map-marker"></span> <span>{{ ekintza.fields.lekua }}</span>
+            </div>
+          </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="alert alert-info">
+        {{ ekintza.fields.deskribapena }}
+        <a href="{{ ekintza.fields.link }}" target="_blank" class="center-block">{{ ekintza.fields.link }}</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-xs-12">
+      <img ng-src="http://larrabetzu.net/media/{{ ekintza.fields.kartela }}" class="img-responsive thumbnail center-block" alt="">
+    </div>
+  </div>
+  <br>
+</div>

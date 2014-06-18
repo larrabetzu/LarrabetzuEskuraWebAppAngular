@@ -1,0 +1,41 @@
+/* Space out content a bit */
+body {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+  
+
+.logo {
+  width: 30px;
+  height: auto;
+  margin-top: -5px;
+  margin-right: 10px;
+}
+.main-menu {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.media-data {
+  h4, h2 {
+    margin: 0;
+  }
+  padding: 5px 20px 10px 20px;
+  background-color: $brand-primary;
+  border-radius: 5px;
+  border-top: solid 10px black;
+  color: white;
+  text-align: center;
+}
+
+.elkarteak-info {
+  margin-left: 2em;
+}
