@@ -143,6 +143,28 @@ table {
 td, th {
   padding: 0; }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?-cans8z');
+  src: url('../fonts/icomoon.eot?#iefix-cans8z') format('embedded-opentype'), url('../fonts/icomoon.woff?-cans8z') format('woff'), url('../fonts/icomoon.ttf?-cans8z') format('truetype'), url('../fonts/icomoon.svg?-cans8z#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-feed:before {
+  content: "\e602"; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -162,7 +184,7 @@ body {
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
-  background-color: #fff; }
+  background-color: #dadada; }
 
 input, button, select, textarea {
   font-family: inherit;
@@ -197,7 +219,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857;
-  background-color: #fff;
+  background-color: #dadada;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -2261,7 +2283,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
         border-color: #eeeeee #eeeeee #ddd; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
       color: #555555;
-      background-color: #fff;
+      background-color: #dadada;
       border: 1px solid #ddd;
       border-bottom-color: transparent;
       cursor: default; }
@@ -2311,7 +2333,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
       border-bottom: 1px solid #ddd;
       border-radius: 4px 4px 0 0; }
     .nav-tabs-justified > .active > a, .nav-tabs-justified > .active > .nav-tabs.nav-justified, .nav-tabs-justified > .active > .nav-tabs.nav-justified, .nav-tabs-justified > .active > a:hover, .nav-tabs-justified > .active > .nav-tabs.nav-justified, .nav-tabs-justified > .active > .nav-tabs.nav-justified, .nav-tabs-justified > .active > a:focus, .nav-tabs-justified > .active > .nav-tabs.nav-justified, .nav-tabs-justified > .active > .nav-tabs.nav-justified {
-      border-bottom-color: #fff; } }
+      border-bottom-color: #dadada; } }
 
 .tab-content > .tab-pane {
   display: none; }
@@ -2733,7 +2755,7 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857;
-  background-color: #fff;
+  background-color: #dadada;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
