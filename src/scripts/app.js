@@ -22,8 +22,8 @@ angular.module('EskuraApp', ['ngRoute', 'ngResource'])
         templateUrl: 'views/elkarteak.html',
         controller: 'ElkarteakCtrl'
       })
-      .when('/twitter', {
-        templateUrl: 'views/twitter.html'
+      .when('/nortzuk-gara', {
+        templateUrl: 'views/nortzuk.html'
       })
       .otherwise({
         redirectTo: '/'

@@ -145,8 +145,8 @@ td, th {
 
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?-cans8z');
-  src: url('../fonts/icomoon.eot?#iefix-cans8z') format('embedded-opentype'), url('../fonts/icomoon.woff?-cans8z') format('woff'), url('../fonts/icomoon.ttf?-cans8z') format('truetype'), url('../fonts/icomoon.svg?-cans8z#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?reulkh');
+  src: url('../fonts/icomoon.eot?#iefixreulkh') format('embedded-opentype'), url('../fonts/icomoon.woff?reulkh') format('woff'), url('../fonts/icomoon.ttf?reulkh') format('truetype'), url('../fonts/icomoon.svg?reulkh#icomoon') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -161,6 +161,18 @@ td, th {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-uniE600:before {
+  content: "\e600"; }
+
+.icon-calendar2:before {
+  content: "\e60c"; }
+
+.icon-users:before {
+  content: "\e603"; }
+
+.icon-twitter:before {
+  content: "\e601"; }
 
 .icon-feed:before {
   content: "\e602"; }

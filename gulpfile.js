@@ -127,6 +127,7 @@ gulp.task('watch', function () {
     gulp.watch('./src/stylesheets/**/*.scss', ['sass']);
     gulp.watch('./src/**/*.html', ['minifyHtml', 'views']);
     gulp.watch(['src/scripts/**/*.js', '!src/scripts/app.min.js', '!src/scripts/vendor'], ['scripts']);
+    gulp.watch('./src/fonts/*', ['fonts']);
   });
 });
 
