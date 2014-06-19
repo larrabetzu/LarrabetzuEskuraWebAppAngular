@@ -219,7 +219,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857;
-  background-color: #dadada;
+  background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -2755,7 +2755,7 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857;
-  background-color: #dadada;
+  background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
