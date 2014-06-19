@@ -2,7 +2,7 @@
 
 angular.module('EskuraApp')
   .controller('ElkarteakCtrl', ['$scope', '$http', function ($scope, $http) {
-    $http.get('http://larrabetzu.net/wsAutor')
+    $http.get('http://larrabetzu.net/wsAutor/', { cache: true })
       .success(function (data) {
         $scope.elkarteak = [];
         data.forEach(function (item) {

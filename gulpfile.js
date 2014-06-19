@@ -19,7 +19,7 @@ gulp.task('sass', function () {
     .pipe(plumber())
     .pipe(sass())
     .pipe(gulp.dest('./src/stylesheets'))
-    .pipe(prefix('last 2 versions'))
+    .pipe(prefix('last 4 versions'))
     .pipe(csso())
     .pipe(gulp.dest('./dist/stylesheets'))
     .pipe(livereload(reloadServer));
