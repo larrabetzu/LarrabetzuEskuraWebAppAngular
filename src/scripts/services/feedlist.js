@@ -17,13 +17,34 @@ angular.module('EskuraApp')
         for (var i = 0; i<feedSources.length; i++) {
           FeedLoader.fetch( { q: feedSources[i].url, num: 5 }, {}, function (data) {
             var feed = data.responseData.feed;
-            // zero zabor eta udalaren titulu aldaketa
-            if (feed.title === 'Bloga') {
-              feed.title = 'Zero Zabor'
+            
+            if (feed.title === 'Larrabetzutik.org') {
+              feed.order = 1;
             };
+            
             if (feed.title === 'Suscripciones') {
-              feed.title = 'Udala'
+              feed.title = 'Udala';
+              feed.order = 2;
             };
+            
+            if (feed.title === 'Larrabetzuko eskola') {
+              feed.order = 3;
+            };
+            
+            if (feed.title === 'HORI BAI gaztetxea') {
+              feed.order = 4;
+            };
+                        
+            if (feed.title === 'Bloga') {
+              feed.title = 'Zero Zabor';
+              feed.order = 5;
+            };
+            
+            if (feed.title === 'gaztelumendi.org') {
+              feed.order = 6;
+            };
+            
+            console.info(feed.title + ' ' + feed.order);
             
             feeds.push(feed);
           });
