@@ -1,0 +1,21 @@
+{
+  "name": "Larrabetzu Eskura",
+  "description": "Larrabetzuko kultur agenda digitala",
+  "launch_path": "/",
+  "icons": {
+    "16": "/imgages/icon-16.png",
+    "48": "/imgages/icon-48.png",
+    "128": "/imgages/icon-128.png"
+  },
+  "developer": {
+    "name": "Sergio Peña",
+    "url": "http://twitter.com/sergixnet"
+  },
+  "default_locale": "eu",
+  "fullscreen": "true",
+  "installs_allowed_from": ["https://marketplace.firefox.com"],
+  "orientation": ["portrait"],
+  "permissions": {
+    "systemXHR": "Beharrezkoa ekitaldien datuak jasotzeko"
+  }
+}

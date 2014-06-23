@@ -62,6 +62,20 @@ gulp.task('scripts', function () {
 });
 
 
+// Manifest for firefox OS
+gulp.task('manifest', function () {
+  gulp.src('./src/manifest.webapp')
+    .pipe(gulp.dest('./dist'));
+});
+
+
+// Icons for firefox OS
+gulp.task('icons', function () {
+  gulp.src(['./src/icon-16.png', './src/icon-48.png', './src/icon-128.png'])
+    .pipe(gulp.dest('./dist'));
+});
+
+
 // Server for development
 gulp.task('server', function() {
   var http = require('http'),
@@ -133,12 +147,12 @@ gulp.task('watch', function () {
 
 
 // Default
-gulp.task('default', ['sass', 'minifyHtml', 'views', 'fonts', 'images', 'favicon', 'scripts']);
+gulp.task('default', ['sass', 'minifyHtml', 'views', 'fonts', 'images', 'favicon', 'scripts', 'manifest', 'icons']);
 
 
 // Development
-gulp.task('dev', ['sass', 'minifyHtml', 'views', 'fonts', 'images', 'favicon', 'scripts', 'server', 'watch']);
+gulp.task('dev', ['sass', 'minifyHtml', 'views', 'fonts', 'images', 'favicon', 'scripts', 'manifest', 'icons', 'server', 'watch']);
 
 
 // Distribution
-gulp.task('dist', ['sass', 'minifyHtml', 'views', 'fonts','images', 'favicon', 'scripts', 'serverDist']);
+gulp.task('dist', ['sass', 'minifyHtml', 'views', 'fonts','images', 'favicon', 'scripts', 'manifest', 'icons', 'serverDist']);

@@ -43,9 +43,7 @@ angular.module('EskuraApp')
             if (feed.title === 'gaztelumendi.org') {
               feed.order = 6;
             };
-            
-            console.info(feed.title + ' ' + feed.order);
-            
+                        
             feeds.push(feed);
           });
         }
