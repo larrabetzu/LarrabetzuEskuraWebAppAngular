@@ -2,28 +2,51 @@
 
 Larrabetzuko Agenda kulturalaren web aplikazioa
 
-### What is this repository for? ###
+### Aplikazioa eraikitzeko ###
+* [NodeJS](http://nodejs.org/) instalatuta egon behar da.
+* Instalatu Gulp.js modu globalean:
+```
+#!javascript
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+npm install -g gulp
+```
+* Respositorio hau klonatu edo deskargatu zure makinan dagoen edozein karpetara:
 
-### How do I get set up? ###
+```
+#!bash
+# Klonatu
+git clone https://github.com/larrabetzu/LarrabetzuEskuraWebAppAngular.git
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+# edo deskargatu
+wget https://github.com/larrabetzu/LarrabetzuEskuraWebAppAngular/archive/master.zip
 
-### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
+```
+* Deskargatu den karpetara sartu eta aplikazioak behar dituen dependentziak instalatu:
 
-### Who do I talk to? ###
+```
+#!bash
 
-* Repo owner or admin
-* Other community or team contact
+cd ~/nire-karpeta
+npm install
+```
+* Gulp exekutatu eta dist izeneko karpeta bat  sortuko da. dist karpeta horren barruko fitxategiak nahi den zerbitzarira igon behar dira aplikazioa ostatatzeko.
+
+```
+#!bash
+
+gulp
+```
+* Garapenerako lagungarri izan daitezkeen komando eta aukera guztiak:
+```
+#!bash
+
+# Aplikazioa eraiki
+gulp
+
+# Garapenerako zerbitzaria http://localhost:3000
+gulp dev
+
+# Aplikazioa eraki eta frogatzeko zerbitzaria http://localhost:9000
+gulp dist
+```
