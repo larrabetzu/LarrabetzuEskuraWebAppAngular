@@ -1,11 +1,11 @@
 {
-  "name": "Larrabetzu Eskura",
+  "name": "Larrabetzu.net",
   "description": "Larrabetzuko kultur agenda digitala",
-  "launch_path": "/",
+  "launch_path": "/app",
   "icons": {
-    "16": "/imgages/icon-16.png",
-    "48": "/imgages/icon-48.png",
-    "128": "/imgages/icon-128.png"
+    "16": "/app/images/icon-16.png",
+    "48": "/app/images/icon-48.png",
+    "128": "/app/images/icon-128.png"
   },
   "developer": {
     "name": "Sergio Peña",
